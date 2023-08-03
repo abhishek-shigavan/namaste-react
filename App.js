@@ -40,7 +40,8 @@ const parent = React.createElement("div", { id: "parent" }, [
 ]);
 */
 
-const parent = (
+// functional component
+const Parent = () => (
   <>
     <div id="child1">
       <h1>Im h1 tag</h1>
@@ -53,4 +54,14 @@ const parent = (
   </>
 );
 
-root.render(parent);
+// component composition
+const HeadingComponent = () => {
+  return (
+    <>
+      <Parent />
+      <h1>Namaste React Functional Component</h1>
+    </>
+  );
+};
+
+root.render(<HeadingComponent />);
