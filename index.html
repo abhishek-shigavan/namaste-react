@@ -10,15 +10,10 @@
 
 <body>
     <!-- simple html -->
-    <div>
-        <div>
-            <h1>Welcome</h1>
-        </div>
-        <div id="root">
-            <h1>Hello World</h1>
-        </div>
+    <div id="root">
+        <h1>Hello World</h1>
     </div>
-    <!-- html with JavaScript -->
+    <!-- html with JavaScript 
     <script>
         const heading = document.createElement("h1")
         heading.innerHTML = "Hello from JavaScript"
@@ -26,10 +21,7 @@
         const root = document.getElementById("root")
         root.appendChild(heading)
     </script>
-
-    <!-- with React -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    -->
     <!--
     <script>
         const heading1 = React.createElement("h1", {}, "Hello from React !!!");
@@ -37,7 +29,7 @@
         root1.render(heading1)
     </script>
     -->
-    <script src="./App.js"></script>
+    <script type="module" src="./App.js"></script>
 </body>
 
 </html>
